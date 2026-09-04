@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build step
-        run: echo "Binda this is a good boy"
+        run: echo "Hello. ${{vars.MY_NAME}}"
