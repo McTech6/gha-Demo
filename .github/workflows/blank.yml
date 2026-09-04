@@ -1,17 +1,16 @@
 name: Hello World
-on: 
-push:
-  branches:
-    - main
-    - develop
-    - 'realease/**'
-pull_request:
-  branches:
-    -main
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    branches:
+      - main
 jobs:
- build:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Build step
-       run: echo "Binda"
- 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build step
+        run: echo "Binda"
